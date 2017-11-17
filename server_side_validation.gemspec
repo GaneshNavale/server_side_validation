@@ -6,6 +6,7 @@ require 'server_side_validation/version'
 Gem::Specification.new do |spec|
   spec.name          = "server_side_validation"
   spec.version       = ServerSideValidation::VERSION
+  spec.date          = %q{2017-11-17}
   spec.authors       = ["Ganesh Navale"]
   spec.email         = ["navaleganesh2011@gmail.com"]
 
@@ -13,9 +14,9 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/ganesh-navale/server_side_validation"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
-    f.match(%r{^(test|spec|features)/})
-  end
+  spec.files         = Dir.glob("lib/**/*")
+  spec.test_files    = Dir.glob("{test,spec,features}/**/*")
+
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
