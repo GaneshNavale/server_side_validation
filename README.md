@@ -1,8 +1,6 @@
 # ServerSideValidation
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/server_side_validation`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This is ruby gem to show model validation on view for each form field.
 
 ## Installation
 
@@ -22,17 +20,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+1. To show model validation next to the form field make sure you should send js request from form.
 
-## Development
+2. In controller action(either create or update) write code as
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+if @object.save
+	your code goes here ....
+else
+	show_validation_errors(object)
+end
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+3. In html you need to write 'error' class for displaying error message next to the form field.
+
+Also define 'field_name_txt' class for each of the field present on form. 
+
+<%= contact.text_area :message, class: 'form-control message_txt' %>
+<div class ='error'></div>
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/server_side_validation. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/GaneshNavale/server_side_validation. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
