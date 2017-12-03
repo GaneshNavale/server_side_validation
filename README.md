@@ -24,18 +24,18 @@ Or install it yourself as:
 
 2. In controller action(either create or update) write code as
 
-if @object.save
+    if @object.save
 	your code goes here ....
-else
+    else
 	show_validation_errors(object)
-end
+    end
 
 3. In html you need to write 'error' class for displaying error message next to the form field.
 
 Also define 'field_name_txt' class for each of the field present on form. 
 
-<%= contact.text_area :message, class: 'form-control message_txt' %>
-<div class ='error'></div>
+    <%= contact.text_area :message, class: 'form-control message_txt' %>
+    <div class ='error'></div>
 
 ## Contributing
 
