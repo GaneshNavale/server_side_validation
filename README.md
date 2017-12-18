@@ -22,20 +22,23 @@ Or install it yourself as:
 
 1. To show model validation next to the form field make sure you should have a js request from form.
 
-2. In controller action write code as
+2. use show_validation_errors method in controller action as
 
-if @object.save
-	your code goes here ....
-else
-	show_validation_errors(object)
-end
+
+```ruby
+    if @object.save
+        your code goes here ....
+    else
+        show_validation_errors(object)
+    end
+```
 
 3. In html you need to write 'error' class for displaying error message next to the form field.
 
 Also define 'field_name_txt' class for each of the field present on form. 
 
-<%= contact.text_area :message, class: 'form-control message_txt' %>
-<div class ='error'></div>
+    <%= contact.text_area :message, class: 'form-control message_txt' %>
+    <div class ='error'></div>
 
 ## Contributing
 
