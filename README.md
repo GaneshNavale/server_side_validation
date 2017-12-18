@@ -1,6 +1,6 @@
 # ServerSideValidation
 
-This is ruby gem to show model validation on view for each form field.
+This is simple ruby gem to show model validation on view for each form field.
 
 ## Installation
 
@@ -20,9 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-1. To show model validation next to the form field make sure you should send js request from form.
+1. To show model validation next to the form field make sure you should have a js request from form.
 
-2. In controller action(either create or update) write code as
+2. In controller action write code as
 
 if @object.save
 	your code goes here ....
