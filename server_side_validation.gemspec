@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["navaleganesh2011@gmail.com"]
 
   spec.summary       = %q{displays validation errors to fields on views}
-  spec.homepage      = "https://github.com/ganesh-navale/server_side_validation"
+  spec.homepage      = "https://github.com/GaneshNavale/server_side_validation"
   spec.license       = "MIT"
 
   spec.files         = Dir.glob("lib/**/*")
