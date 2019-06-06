@@ -1,6 +1,6 @@
 # ServerSideValidation
 
-This is simple ruby gem to show model validation on view for each form field.
+This is simple ruby gem(https://rubygems.org/gems/server_side_validation) to show model validation on view for each form field.
 
 ## Installation
 
