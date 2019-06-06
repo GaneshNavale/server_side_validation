@@ -33,12 +33,14 @@ Or install it yourself as:
     end
 ```
 
-3. In html you need to write 'error' class for displaying error message next to the form field.
+3. In html.erb files, you need to write 'error' class for displaying error message next to the form field.
 
 Also define 'field_name_txt' class for each of the field present on form. 
 
     <%= contact.text_area :message, class: 'form-control message_txt' %>
     <div class ='error'></div>
+
+This will show an validation error inline to for your form fields.
 
 ## Contributing
 
