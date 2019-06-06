@@ -40,7 +40,7 @@ Also define 'field_name_txt' class for each of the field present on form.
     <%= contact.text_area :message, class: 'form-control message_txt' %>
     <div class ='error'></div>
 
-This will show an validation error inline to for your form fields.
+This will show an validation error message inline next to your form fields.
 
 ## Contributing
 
